@@ -12,6 +12,7 @@
 /* Layout: one phone-width column. Ink-black ground, paper text, printer's CMYK marks as the only ornament. */
 :root{--bg:#0c0b10;--ink:#15131c;--paper:#f3efe6;--mute:#a39e94;--line:rgba(243,239,230,.12);--c:#2fd4ff;--m:#ff2d8a;--y:#ffd23f;--k:#f3efe6;--font-display:"Fraunces",Georgia,"Times New Roman",serif;--font-body:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;color-scheme:dark}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html,body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--font-body);-webkit-text-size-adjust:100%}
 body{padding-block:env(safe-area-inset-top,0px) calc(32px + env(safe-area-inset-bottom,0px));padding-inline:16px;background:radial-gradient(1200px 600px at 50% -200px,#1d1830 0%,var(--bg) 60%)}
 .wrap{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
@@ -60,7 +61,8 @@ footer a{color:var(--paper);text-decoration:none;border-bottom:1px solid var(--l
 .qr p{margin:0;color:var(--paper);font:400 20px/1.3 var(--font-display);text-align:center}
 .qr small{color:var(--mute);font-size:13px;word-break:break-all;text-align:center}
 .qr button{appearance:none;background:var(--ink);color:var(--paper);border:1px solid var(--line);border-radius:999px;padding:10px 22px;font:500 15px var(--font-body);cursor:pointer}
-@media (max-width:360px){.actions{grid-template-columns:1fr}.card{grid-template-columns:44px 1fr}.card .go{display:none}}
+@media (max-width:520px){.card{grid-template-columns:48px 1fr}.card .go{grid-column:2;align-self:start;margin-top:4px;white-space:normal}.card .go span{display:inline;margin-right:6px}}
+@media (max-width:360px){.actions{grid-template-columns:1fr}.card{grid-template-columns:44px 1fr}}
 @media (prefers-reduced-motion:reduce){.btn{transition:none}}
 </style>
 </head>
