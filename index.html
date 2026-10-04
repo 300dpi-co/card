@@ -149,10 +149,11 @@ $('biz').innerHTML=BIZ.map(b=>`<a class="card" href="${b.url}" style="--tint:${b
 
 /* QR of this page, for phones with NFC off */
 let made=false;
-function openQR(){$('qr').classList.add('open');const u='https://300dpi-co.github.io/card/';if(!made&&window.QRCode){made=true;new QRCode($('qrbox'),{text:u,width:300,height:300,correctLevel:QRCode.CorrectLevel.M});}$('qrurl').textContent=u.replace('https://','');}
+function openQR(){$('qr').classList.add('open');const u=PAGE;if(!made&&window.QRCode){made=true;new QRCode($('qrbox'),{text:u,width:300,height:300,correctLevel:QRCode.CorrectLevel.M});}$('qrurl').textContent=u.replace('https://','');}
 $('qrbtn').addEventListener('click',e=>{e.preventDefault();openQR();});
 $('qrclose').addEventListener('click',()=>$('qr').classList.remove('open'));
-const PAGE='https://300dpi-co.github.io/card/';
+/* The page's own address, so the QR and Share use whichever host serves it (300dpi.co/card or the GitHub mirror) */
+const PAGE=(location.origin+location.pathname).replace(/index\.html$/,'').replace(/\/?$/,'/');
 if(navigator.share){$('qrshare').hidden=false;$('qrshare').addEventListener('click',()=>navigator.share({title:ME.name+' · founder card',text:'Vipul Patel: 300DPI, Huunr, USBizGuru, 48HoursBanners, Mansi Print',url:PAGE}).catch(()=>{}));}
 /* Opened from the home-screen app, or with ?mode=share or #qr: show the QR first */
 const standalone=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
