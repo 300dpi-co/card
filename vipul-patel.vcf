@@ -2,14 +2,15 @@ BEGIN:VCARD
 VERSION:3.0
 N:Patel;Vipul;;;
 FN:Vipul Patel
-ORG:300DPI
+ORG:USBizGuru LLC
 TITLE:Founder
-TEL;TYPE=CELL,VOICE:+919737731300
-EMAIL;TYPE=INTERNET,PREF:info@300dpi.co
-URL:https://300dpi.co
-URL:https://huunr.com
+TEL;TYPE=CELL,VOICE:+919586492922
+TEL;TYPE=WORK,VOICE:+15162023466
+EMAIL;TYPE=INTERNET,PREF:info@usbizguru.com
 URL:https://usbizguru.com
+URL:https://huunr.com
+URL:https://300dpi.co
 URL:https://48hoursbanners.com
 URL:https://mansiprint.shop
-NOTE:Founder of 300DPI (design, print, software), Huunr (founder community), USBizGuru (US LLC formation), 48HoursBanners and Mansi Print (US printing).
+NOTE:Founder of USBizGuru (Wyoming LLC, EIN and US banking for Indian founders, priced in rupees). Also Huunr (founder community), 300DPI (design, print, software), 48HoursBanners and Mansi Print (US printing).
 END:VCARD

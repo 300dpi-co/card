@@ -1,12 +1,12 @@
 {
-  "name": "Vipul Patel · 300DPI",
-  "short_name": "Vipul",
-  "description": "Vipul Patel's founder card: contact, businesses and QR to share.",
+  "name": "Vipul Patel · USBizGuru",
+  "short_name": "USBizGuru",
+  "description": "Vipul Patel, founder of USBizGuru: contact, businesses and QR to share.",
   "start_url": "./?mode=share",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0c0b10",
-  "theme_color": "#0c0b10",
+  "background_color": "#070b16",
+  "theme_color": "#070b16",
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
