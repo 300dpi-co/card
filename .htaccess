@@ -1,0 +1,5 @@
+AddType text/vcard .vcf
+AddType application/manifest+json .webmanifest
+<FilesMatch "\.vcf$">
+  Header set Content-Disposition "attachment; filename=vipul-patel.vcf"
+</FilesMatch>
