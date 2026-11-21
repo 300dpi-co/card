@@ -3,6 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>
+/* Chrome's "Desktop site" mode ignores the viewport tag and lays the page out 980px wide on a phone,
+   so everything renders at about a third of its size. On a touch phone-sized screen showing a desktop-width
+   layout, scale the page back up so it reads at phone size. Normal phones and computers are untouched. */
+(function(){try{
+  var s=Math.min(screen.width,screen.height),w=window.innerWidth||document.documentElement.clientWidth;
+  if(s&&s<=600&&w>=s*1.6&&window.matchMedia&&matchMedia('(pointer:coarse)').matches){document.documentElement.style.zoom=(w/s).toFixed(3);}
+}catch(e){}})();
+</script>
 <title>Vipul Patel, USBizGuru</title>
 <meta name="description" content="Vipul Patel, founder of USBizGuru. We set up your US LLC, get you paid, and file your US taxes every year, so you can run the whole business from India.">
 <meta name="theme-color" content="#ffffff">
