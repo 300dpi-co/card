@@ -8,5 +8,7 @@ TEL;TYPE=CELL,VOICE:+919586492922
 TEL;TYPE=WORK,VOICE:+15162023466
 EMAIL;TYPE=INTERNET,PREF:info@usbizguru.com
 URL:https://usbizguru.com
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/mpshop
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/mpshop
 NOTE:Founder of USBizGuru: your US company, run from India. LLCs in Wyoming, Delaware, New Mexico and more, EIN, US banking and payments, and US tax filings every year. Priced in rupees.
 END:VCARD
