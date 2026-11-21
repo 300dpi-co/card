@@ -1,12 +1,12 @@
 {
   "name": "Vipul Patel · USBizGuru",
   "short_name": "USBizGuru",
-  "description": "Vipul Patel, founder of USBizGuru: contact, businesses and QR to share.",
+  "description": "Vipul Patel, founder of USBizGuru: your US company, run from India. Contact and QR to share.",
   "start_url": "./?mode=share",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#070b16",
-  "theme_color": "#070b16",
+  "background_color": "#F3F5F8",
+  "theme_color": "#F3F5F8",
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }

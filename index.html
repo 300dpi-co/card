@@ -3,170 +3,499 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Vipul Patel</title>
-<meta name="description" content="Vipul Patel, founder of USBizGuru: Wyoming LLC, EIN and US banking for Indian founders, priced in rupees. Save contact and see every business.">
-<meta name="theme-color" content="#070b16">
+<title>Vipul Patel, USBizGuru</title>
+<meta name="description" content="Vipul Patel, founder of USBizGuru. We set up your US LLC, get you paid, and file your US taxes every year, so you can run the whole business from India.">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Vipul">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="USBizGuru">
+<meta property="og:title" content="Vipul Patel, founder of USBizGuru">
+<meta property="og:description" content="Your US company, run from India. LLC, EIN, banking and US tax, every year.">
+<meta property="og:image" content="founder-800.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap">
 <style>
-/* Layout: one phone-width column. Ink-black ground, paper text, printer's CMYK marks as the only ornament. */
-:root{--bg:#070b16;--ink:#0e1527;--paper:#f3efe6;--mute:#9aa3b8;--line:rgba(243,239,230,.12);--c:#3b7bff;--m:#e63946;--y:#f2b134;--k:#f3efe6;--font-display:"Fraunces",Georgia,"Times New Roman",serif;--font-body:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;color-scheme:dark}
+/* Follows usbizguru.com: Outfit, deep navy-teal brand scale, gold pill buttons, money-green checks,
+   soft blue and gold glows behind the hero, the founder photo inside a gold ring. */
+:root{
+  --brand-50:#f0f7fa;--brand-100:#d9eef5;--brand-500:#2389ad;--brand-600:#0c4a6e;--brand-700:#0a3d5c;--brand-900:#062337;
+  --gold-50:#fbf7ec;--gold-100:#f5ebcf;--gold:#d4a84b;--gold-600:#c4962f;--gold-ink:#0a2744;
+  --money:#059669;--wa:#25D366;--wa-ink:#0b3d22;
+  --slate-100:#f1f5f9;--slate-200:#e2e8f0;--slate-400:#94a3b8;--slate-500:#64748b;--slate-600:#475569;--slate-700:#334155;
+  --font:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-html,body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--font-body);-webkit-text-size-adjust:100%}
-body{padding-block:env(safe-area-inset-top,0px) calc(32px + env(safe-area-inset-bottom,0px));padding-inline:16px;background:radial-gradient(1200px 600px at 50% -200px,#14234a 0%,var(--bg) 60%)}
-.wrap{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--slate-600);font:400 16px/1.6 var(--font);overflow-x:hidden;
+  padding:env(safe-area-inset-top,0px) 16px calc(96px + env(safe-area-inset-bottom,0px))}
 a{color:inherit}
-.marks{display:flex;gap:6px;align-items:center}
-.marks i{width:10px;height:10px;border-radius:50%;display:block}
-.marks .c{background:var(--c)}.marks .m{background:var(--m)}.marks .y{background:var(--y)}.marks .k{background:var(--k)}
-header{padding-top:28px;display:flex;flex-direction:column;gap:14px}
-.top{display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.id{display:flex;gap:16px;align-items:center}
-.photo{width:84px;height:84px;border-radius:50%;flex:none;background:radial-gradient(circle at 35% 30%,#1e3a7a,#0b1430);border:1px solid var(--line);display:grid;place-items:center;font:600 30px/1 var(--font-display);color:var(--paper);overflow:hidden}
-.photo img{width:100%;height:100%;object-fit:cover;display:block}
-h1{font:600 34px/1.05 var(--font-display);margin:0;text-wrap:balance;letter-spacing:-.01em}
-.role{margin:6px 0 0;color:var(--mute);font-size:14px;line-height:1.45}
-.role b{color:var(--paper);font-weight:500}
-.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.btn{display:flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--ink);color:var(--paper);text-decoration:none;font-weight:500;font-size:15px;transition:transform .15s,border-color .15s}
-.btn:active{transform:scale(.98)}
-.btn:focus-visible{outline:2px solid var(--c);outline-offset:2px}
-.btn.primary{grid-column:1/-1;background:var(--paper);color:#070b16;border-color:var(--paper);font-weight:600;font-size:16px}
-.btn.brand{grid-column:1/-1;background:var(--c);color:#fff;border-color:var(--c);font-weight:600;font-size:16px}
-.ask p span{display:block;margin-top:6px;font:400 15px/1.45 var(--font-body);color:var(--mute)}
-.card.lead{background:linear-gradient(180deg,#132046,var(--ink))}
-.card.lead ul{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:4px;color:var(--paper);font-size:13.5px}
-.card.lead ul li::before{content:"✓ ";color:var(--y)}
-.card:active{background:#16213f}
-.btn svg{width:18px;height:18px;flex:none}
-.ask{border:1px solid var(--line);border-left:3px solid var(--m);border-radius:12px;padding:14px 16px;background:rgba(255,45,138,.05)}
-.ask small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:6px}
-.ask p{margin:0;font:400 19px/1.35 var(--font-display)}
-section h2{font:400 13px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin:0 0 12px;display:flex;align-items:center;gap:10px}
-section h2::after{content:"";flex:1;height:1px;background:var(--line)}
-.biz{display:flex;flex-direction:column;gap:10px}
-.card{display:grid;grid-template-columns:48px 1fr auto;gap:14px;align-items:start;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--ink);text-decoration:none;position:relative;overflow:hidden}
-.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--tint)}
-.card>div{min-width:0}
-.mono{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font:600 17px/1 var(--font-display);color:#070b16;background:var(--tint);letter-spacing:-.02em}
-.card h3{margin:0;font:600 18px/1.2 var(--font-display)}
-.card .tag{margin:3px 0 6px;color:var(--paper);font-size:14px;line-height:1.4}
-.card .what{margin:0;color:var(--mute);font-size:13.5px;line-height:1.45}
-.card .fact{margin:8px 0 0;font-size:12.5px;color:var(--paper);display:inline-block;padding:4px 8px;border-radius:999px;background:rgba(243,239,230,.07);font-variant-numeric:tabular-nums}
-.card .go{align-self:center;color:var(--mute);font-size:13px;white-space:nowrap}
-.card .go span{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
-footer{display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center;color:var(--mute);font-size:13px;line-height:1.5;padding-top:8px}
-footer .made{display:flex;align-items:center;gap:10px}
-footer a{color:var(--paper);text-decoration:none;border-bottom:1px solid var(--line)}
-.qr{position:fixed;inset:0;background:rgba(12,11,16,.96);display:none;align-items:center;justify-content:center;flex-direction:column;gap:18px;padding:24px;z-index:9}
+:focus-visible{outline:2px solid var(--brand-600);outline-offset:2px;border-radius:6px}
+.wrap{max-width:480px;margin:0 auto;position:relative}
+
+/* Soft glows, as on the site's hero */
+.glows{position:absolute;left:0;right:0;top:0;height:760px;overflow:hidden;pointer-events:none;z-index:-1}
+.glow{position:absolute;border-radius:50%;filter:blur(60px);opacity:.85}
+.glow.b{width:360px;height:360px;left:calc(50% - 400px);top:-120px;background:var(--brand-100)}
+.glow.g{width:320px;height:320px;left:calc(50% + 90px);top:120px;background:var(--gold-100)}
+
+/* Top */
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0 0}
+.top img{height:30px;width:auto;display:block}
+.top span{font-size:13px;color:var(--slate-500);font-weight:500}
+.loc{display:flex;align-items:center;gap:12px;white-space:nowrap}
+.loc span{display:flex;align-items:center;gap:6px;line-height:1.2}
+.flag{display:block;width:20px;height:13px;border-radius:2px;box-shadow:0 0 0 1px rgba(6,35,55,.12);flex:none;overflow:hidden}
+.end.flagged::before{display:none}
+.end.flagged .flag{position:absolute;left:0;top:1px;width:28px;height:19px;border-radius:3px;box-shadow:0 0 0 2px #fff,0 0 0 3px rgba(6,35,55,.14)}
+
+/* Hero */
+.hero{padding:26px 0 0;text-align:center}
+.portrait{position:relative;width:176px;height:176px;margin:0 auto}
+.portrait::before{content:"";position:absolute;inset:-12px;border-radius:50%;border:2px solid var(--gold);opacity:.55}
+.portrait::after{content:"";position:absolute;inset:-26px;border-radius:50%;border:1px solid var(--brand-100)}
+.portrait picture,.portrait img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:50% 18%;background:var(--brand-50)}
+.badge{position:absolute;right:-8px;bottom:8px;display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--slate-200);
+  border-radius:999px;padding:5px 10px 5px 6px;font-size:12.5px;font-weight:600;color:var(--brand-900);box-shadow:0 8px 20px -10px rgba(6,35,55,.35)}
+.badge i{width:20px;height:20px;border-radius:50%;background:var(--money);display:grid;place-items:center}
+.badge i svg{width:12px;height:12px}
+.name{margin:22px 0 0;font-size:24px;font-weight:700;color:var(--brand-900);line-height:1.2}
+.title{margin:2px 0 0;font-size:15px;color:var(--slate-500);font-weight:500}
+h1{margin:20px auto 0;font-size:37px;line-height:1.06;font-weight:800;color:var(--brand-900);letter-spacing:-.025em;max-width:13ch;text-wrap:balance}
+h1 span{color:var(--brand-500)}
+.lede{margin:14px auto 0;font-size:17px;color:var(--slate-600);max-width:34ch}
+.facts{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;font-size:14px;font-weight:600;color:var(--slate-700)}
+.facts li{display:flex;align-items:center;gap:6px}
+.facts svg{width:16px;height:16px;color:var(--money);flex:none}
+
+/* Buttons: pills, like the site */
+.actions{display:grid;gap:10px;margin-top:24px}
+.btn{display:flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:12px 20px;border-radius:999px;border:2px solid transparent;
+  text-decoration:none;font:700 16px/1.2 var(--font);cursor:pointer;transition:background-color .15s,box-shadow .15s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.wa{background:var(--wa);color:var(--wa-ink);box-shadow:0 10px 20px -10px rgba(37,211,102,.7)}
+.btn.wa:hover{background:#1fbd5a}
+.btn.gold{background:var(--gold);color:var(--gold-ink);box-shadow:0 10px 20px -8px rgba(212,168,75,.55)}
+.btn.gold:hover{background:var(--gold-600)}
+.btn.line{background:#fff;border-color:var(--brand-900);color:var(--brand-900)}
+.btn.line:hover{background:var(--brand-50)}
+.minor{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:4px}
+.minor a{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 4px;border-radius:16px;text-decoration:none;font-size:12.5px;font-weight:600;color:var(--slate-700)}
+.minor a:hover{background:var(--brand-50)}
+.minor i{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--brand-50);color:var(--brand-600)}
+.minor svg{width:19px;height:19px}
+
+/* Sections */
+section{margin-top:48px}
+.kicker{margin:0 0 6px;font-size:14px;font-weight:600;color:var(--brand-500)}
+h2{margin:0;font-size:27px;line-height:1.15;font-weight:800;color:var(--brand-900);letter-spacing:-.02em}
+.sub{margin:8px 0 22px;font-size:15.5px;color:var(--slate-500)}
+
+/* The route from India to a running US company */
+.route{list-style:none;margin:0;padding:0;position:relative}
+.route::before{content:"";position:absolute;left:13px;top:16px;bottom:16px;width:2px;
+  background:linear-gradient(var(--gold),var(--brand-500) 55%,var(--brand-600))}
+.end{position:relative;padding-left:44px;font-weight:700;color:var(--brand-900);font-size:16px;line-height:1.35}
+.end small{display:block;font-weight:400;color:var(--slate-500);font-size:14px}
+.end::before{content:"";position:absolute;left:3px;top:0;width:22px;height:22px;border-radius:50%;background:#fff;border:5px solid var(--gold)}
+.end.home{margin-top:20px}
+.end.home::before{background:var(--brand-600);border-color:var(--brand-100)}
+.phase{position:relative;padding:24px 0 0 44px}
+.phase::before{content:"";position:absolute;left:8px;top:28px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--brand-500)}
+.phase>h3{margin:0 0 10px;font-size:13px;font-weight:700;color:var(--brand-500);letter-spacing:.02em}
+.stop{background:#fff;border:1px solid var(--slate-200);border-radius:20px;padding:18px;margin-bottom:10px;box-shadow:0 12px 24px -20px rgba(6,35,55,.35)}
+.stop h4{margin:0 0 4px;font-size:18px;font-weight:700;color:var(--brand-900);line-height:1.3}
+.stop p{margin:0;font-size:15px}
+.stop ul{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:7px;font-size:15px}
+.stop li{position:relative;padding-left:26px;line-height:1.45}
+.stop li::before{content:"";position:absolute;left:0;top:2px;width:18px;height:18px;border-radius:50%;background:#ecfdf5}
+.stop li::after{content:"";position:absolute;left:5px;top:7px;width:8px;height:4px;border-left:2px solid var(--money);border-bottom:2px solid var(--money);transform:rotate(-45deg)}
+.price{display:inline-block;margin-top:12px;font-size:14px;font-weight:600;color:var(--brand-900);background:var(--gold-50);border:1px solid var(--gold-100);border-radius:999px;padding:4px 12px}
+.stop.tax{background:linear-gradient(160deg,var(--brand-700),var(--brand-900));border-color:var(--brand-900);color:#cfe3ec}
+.stop.tax h4{color:#fff}
+.stop.tax .tag{display:inline-block;margin-bottom:10px;font-size:12.5px;font-weight:700;color:var(--gold-ink);background:var(--gold);border-radius:999px;padding:3px 11px}
+.stop.tax li::before{background:rgba(255,255,255,.12)}
+.stop.tax li::after{border-color:var(--gold)}
+
+/* State picker */
+/* One-line segmented control: all states visible at once */
+.tabs{display:flex;gap:3px;padding:4px;background:var(--brand-50);border:1px solid var(--brand-100);border-radius:999px}
+.tabs button{flex:1 1 auto;min-width:0;appearance:none;border:0;background:transparent;border-radius:999px;padding:10px 4px;white-space:nowrap;
+  font:600 13.5px/1 var(--font);color:var(--slate-700);cursor:pointer;transition:background-color .15s,color .15s}
+.tabs button:hover{background:#fff}
+.tabs button[aria-selected="true"]{background:var(--brand-900);color:#fff;box-shadow:0 4px 10px -4px rgba(6,35,55,.5)}
+.state{margin-top:12px;background:#fff;border:1px solid var(--slate-200);border-radius:20px;padding:20px;box-shadow:0 12px 24px -20px rgba(6,35,55,.35)}
+.state .hd{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.state h3{margin:0;font-size:22px;font-weight:800;color:var(--brand-900);letter-spacing:-.01em}
+.state .pop{font-size:12.5px;font-weight:700;color:var(--gold-ink);background:var(--gold);border-radius:999px;padding:3px 11px;white-space:nowrap}
+.state .best{margin:6px 0 16px;font-size:15.5px;color:var(--slate-700)}
+.state dl{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.state dl div{background:var(--brand-50);border-radius:14px;padding:12px 14px}
+.state dt{font-size:13px;color:var(--slate-500);font-weight:500}
+.state dd{margin:2px 0 0;font-size:20px;font-weight:700;color:var(--brand-900);line-height:1.2}
+.state dd small{display:block;font-size:12.5px;font-weight:500;color:var(--slate-500);margin-top:2px}
+.state .ours{margin:14px 0 0;font-size:14px;color:var(--slate-600)}
+.state .ours b{color:var(--brand-900)}
+.note{margin:12px 2px 0;font-size:13.5px;color:var(--slate-500)}
+
+/* About me */
+.about{background:#fff;border:1px solid var(--slate-200);border-radius:20px;padding:20px;box-shadow:0 12px 24px -20px rgba(6,35,55,.35)}
+.about .me{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.about .me img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:2px solid var(--gold);flex:none}
+.about .me b{display:block;color:var(--brand-900);font-size:17px;font-weight:700;line-height:1.25}
+.about .me span{font-size:14px;color:var(--slate-500)}
+.about p{margin:0;font-size:15.5px;color:var(--slate-700)}
+.about p+p{margin-top:10px}
+.years{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.years li{background:var(--brand-50);border-radius:14px;padding:12px 10px;text-align:center}
+.years .flag{width:28px;height:19px;margin:0 auto 8px;border-radius:3px}
+.years b{display:block;font-size:15px;font-weight:700;color:var(--brand-900);line-height:1.2}
+.years span{display:block;font-size:12.5px;color:var(--slate-500);margin-top:2px;line-height:1.3}
+.years li.now{background:var(--gold-50);box-shadow:inset 0 0 0 1px var(--gold-100)}
+
+/* Who, and the event ask */
+.who{background:var(--brand-50);border-radius:20px;padding:20px}
+.who p{margin:0;font-size:15.5px;color:var(--slate-700)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;list-style:none;padding:0}
+.chips li{background:#fff;border:1px solid var(--brand-100);border-radius:999px;padding:5px 12px;font-size:13.5px;font-weight:600;color:var(--brand-700)}
+.ask{margin-top:12px;border-radius:20px;padding:18px 20px;background:var(--gold-50);border:1px solid var(--gold-100)}
+.ask b{display:block;font-size:13.5px;color:var(--gold-600);margin-bottom:4px}
+.ask p{margin:0;font-size:16px;color:var(--brand-900);font-weight:500}
+
+/* Closing call */
+.cta{margin-top:48px;border-radius:24px;padding:28px 22px;background:linear-gradient(160deg,var(--brand-600),var(--brand-900));color:#cfe3ec;text-align:center;position:relative;overflow:hidden}
+.cta::after{content:"";position:absolute;width:260px;height:260px;right:-120px;top:-120px;border-radius:50%;border:2px solid rgba(212,168,75,.35)}
+.cta h2{color:#fff}
+.cta p{margin:10px auto 20px;max-width:32ch}
+.cta .actions{margin-top:0}
+.cta .btn.ghost{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+.cta .btn.ghost:hover{background:rgba(255,255,255,.08)}
+footer{margin-top:28px;text-align:center;font-size:13px;color:var(--slate-500)}
+footer img{height:22px;width:auto;display:block;margin:0 auto 10px;opacity:.9}
+footer p{margin:0}
+footer p+p{margin-top:4px}
+
+/* Sticky bar after the hero buttons scroll away */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:5;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));
+  background:rgba(255,255,255,.95);border-top:1px solid var(--slate-200);backdrop-filter:blur(10px);
+  transform:translateY(110%);transition:transform .25s ease}
+.bar.show{transform:none}
+.bar .in{max-width:480px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 48px;gap:8px}
+.bar .btn{min-height:48px;font-size:15px;padding:10px 12px}
+.bar .qrbtn{display:grid;place-items:center;border-radius:50%;width:48px;height:48px;background:var(--brand-50);color:var(--brand-600);text-decoration:none}
+.bar .qrbtn svg{width:20px;height:20px}
+
+/* QR view */
+.qr{position:fixed;inset:0;background:#fff;display:none;align-items:center;justify-content:center;flex-direction:column;gap:18px;padding:24px;z-index:9;text-align:center}
 .qr.open{display:flex}
-.qr .box{background:#fff;padding:18px;border-radius:16px}
-.qr .box img,.qr .box canvas{display:block;width:min(70vw,300px);height:min(70vw,300px)}
-.qr p{margin:0;color:var(--paper);font:400 20px/1.3 var(--font-display);text-align:center}
-.qr small{color:var(--mute);font-size:13px;word-break:break-all;text-align:center}
-.qr button,.qr .btn{appearance:none;background:var(--ink);color:var(--paper);border:1px solid var(--line);border-radius:999px;padding:10px 22px;font:500 15px var(--font-body);cursor:pointer;min-height:0;text-decoration:none}
+.qr .head img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:3px solid var(--gold);display:block;margin:0 auto 10px}
+.qr .head b{display:block;font-size:24px;font-weight:700;color:var(--brand-900)}
+.qr .head span{font-size:14px;color:var(--slate-500)}
+.qr .box{background:#fff;padding:16px;border-radius:20px;border:1px solid var(--slate-200);box-shadow:0 20px 40px -24px rgba(6,35,55,.4)}
+.qr .box img,.qr .box canvas{display:block;width:min(66vw,260px);height:min(66vw,260px)}
+.qr small{color:var(--slate-500);font-size:13px;word-break:break-all}
 .qr .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.qr .who{display:flex;flex-direction:column;align-items:center;gap:6px}
-.qr .who .marks{margin-bottom:6px}
-.qr .who b{font:600 26px/1.1 var(--font-display)}
-.qr .who span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-@media (max-width:520px){.card{grid-template-columns:48px 1fr}.card .go{grid-column:2;align-self:start;margin-top:4px;white-space:normal}.card .go span{display:inline;margin-right:6px}}
-@media (max-width:360px){.actions{grid-template-columns:1fr}.card{grid-template-columns:44px 1fr}}
-@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+.qr .row .btn{min-height:46px;font-size:15px}
+
+@media (max-width:360px){.tabs{gap:1px;padding:3px}.tabs button{font-size:11.5px;padding:9px 2px;letter-spacing:-.01em}.top img{height:24px}.loc{gap:8px}.loc span{gap:4px;font-size:12px}.top .flag{width:17px;height:11px}h1{font-size:32px}.portrait{width:150px;height:150px}.minor a{font-size:12px}}
+@media (prefers-reduced-motion:reduce){.bar,.btn{transition:none}}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="flag-in" viewBox="0 0 30 20" preserveAspectRatio="none">
+      <rect width="30" height="20" fill="#fff"/>
+      <rect width="30" height="6.67" fill="#FF9933"/>
+      <rect y="13.33" width="30" height="6.67" fill="#138808"/>
+      <circle cx="15" cy="10" r="2.6" fill="none" stroke="#000080" stroke-width=".55"/>
+      <circle cx="15" cy="10" r=".6" fill="#000080"/>
+      <path d="M15 7.4v5.2M12.4 10h5.2M13.16 8.16l3.68 3.68M16.84 8.16l-3.68 3.68" stroke="#000080" stroke-width=".25"/>
+    </symbol>
+    <symbol id="flag-jp" viewBox="0 0 30 20" preserveAspectRatio="none">
+      <rect width="30" height="20" fill="#fff"/>
+      <circle cx="15" cy="10" r="6" fill="#BC002D"/>
+    </symbol>
+    <symbol id="flag-us" viewBox="0 0 38 20" preserveAspectRatio="none">
+      <rect width="38" height="20" fill="#B22234"/>
+      <path d="M0 2.31h38M0 5.38h38M0 8.46h38M0 11.54h38M0 14.62h38M0 17.69h38" stroke="#fff" stroke-width="1.54"/>
+      <rect width="15.2" height="10.77" fill="#3C3B6E"/>
+      <g fill="#fff">
+        <circle cx="2.2" cy="2" r=".6"/><circle cx="5.9" cy="2" r=".6"/><circle cx="9.6" cy="2" r=".6"/><circle cx="13.3" cy="2" r=".6"/>
+        <circle cx="4" cy="4.2" r=".6"/><circle cx="7.7" cy="4.2" r=".6"/><circle cx="11.4" cy="4.2" r=".6"/>
+        <circle cx="2.2" cy="6.4" r=".6"/><circle cx="5.9" cy="6.4" r=".6"/><circle cx="9.6" cy="6.4" r=".6"/><circle cx="13.3" cy="6.4" r=".6"/>
+        <circle cx="4" cy="8.6" r=".6"/><circle cx="7.7" cy="8.6" r=".6"/><circle cx="11.4" cy="8.6" r=".6"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+<div class="glows" aria-hidden="true"><div class="glow b"></div><div class="glow g"></div></div>
 <div class="wrap">
-  <header>
-    <div class="top"><div class="marks" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></div><span id="loc">USBizGuru LLC · Gujarat · New York</span></div>
-    <div class="id">
-      <div class="photo" id="photo">VP</div>
-      <div>
-        <h1 id="name">Vipul Patel</h1>
-        <p class="role" id="role">Founder, <b>USBizGuru</b> · Your US company, set up properly. Priced in rupees. No surprises.</p>
-      </div>
+
+  <div class="top">
+    <a href="https://usbizguru.com" target="_blank" rel="noopener"><img src="logo-wordmark.svg" alt="USBizGuru" width="150" height="30"></a>
+    <div class="loc" id="loc">
+      <span><svg class="flag" role="img" aria-label="India"><use href="#flag-in"/></svg>Gujarat</span>
+      <span><svg class="flag" role="img" aria-label="USA"><use href="#flag-us"/></svg>New York</span>
     </div>
+  </div>
+
+  <header class="hero">
+    <div class="portrait">
+      <picture>
+        <source type="image/webp" srcset="founder-634.webp 1x, founder-800.webp 2x">
+        <img src="founder-634.jpg" alt="Vipul Patel, founder of USBizGuru" width="634" height="634">
+      </picture>
+      <span class="badge"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i>Founder</span>
+    </div>
+    <p class="name" id="name">Vipul Patel</p>
+    <p class="title">Founder, USBizGuru LLC</p>
+
+    <h1>Your US company, <span>run from India.</span></h1>
+    <p class="lede">We set it up, get you paid, and file your US taxes every year. No US visit, no US address needed.</p>
+    <ul class="facts">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>Pay in ₹ by UPI or card</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>WhatsApp support in IST</li>
+    </ul>
+
+    <nav class="actions" id="heroActions" aria-label="Contact Vipul">
+      <a class="btn wa" data-wa href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>Message me on WhatsApp</a>
+      <a class="btn gold" href="vipul-patel.vcf" download="vipul-patel.vcf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>Save my contact</a>
+      <div class="minor">
+        <a id="call" href="#"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg></i>Call</a>
+        <a id="mail" href="#"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg></i>Email</a>
+        <a href="https://usbizguru.com" target="_blank" rel="noopener"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></i>Website</a>
+        <a data-qr href="#qr"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14h1M14 20h1M20 20h1M17 17h4v4"/></svg></i>Share</a>
+      </div>
+      <a class="btn line" id="li" href="#" hidden>LinkedIn</a>
+    </nav>
   </header>
 
-  <nav class="actions" aria-label="Contact">
-    <a class="btn brand" id="llc" href="https://usbizguru.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>Start a US LLC · from $99</a>
-    <a class="btn primary" id="save" href="vipul-patel.vcf" download="vipul-patel.vcf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>Save contact</a>
-    <a class="btn" id="wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
-    <a class="btn" id="call" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg>Call</a>
-    <a class="btn" id="mail" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>Email</a>
-    <a class="btn" id="li" href="#" hidden><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2zM8 19H5V9h3zM6.5 7.7a1.7 1.7 0 1 1 0-3.5 1.7 1.7 0 0 1 0 3.5zM19 19h-3v-4.9c0-1.2 0-2.7-1.6-2.7s-1.9 1.3-1.9 2.6V19h-3V9h2.9v1.4a3.2 3.2 0 0 1 2.8-1.6c3 0 3.6 2 3.6 4.6z"/></svg>LinkedIn</a>
-    <a class="btn" id="qrbtn" href="#qr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14h1M14 20h1M20 20h1M17 17h4v4"/></svg>Show QR</a>
-  </nav>
-
-  <div class="ask"><small>At this event, looking for</small><p id="ask">Founders who sell to the US and need a US company, EIN and Stripe.<span>Also: web-app and software partners in India to build with.</span></p></div>
-
-  <section>
-    <h2>Businesses</h2>
-    <div class="biz" id="biz"></div>
+  <section aria-labelledby="h-states">
+    <p class="kicker">Wyoming, Delaware, New Mexico and more</p>
+    <h2 id="h-states">Which state is right for you?</h2>
+    <p class="sub">Tap a state to compare. I'll help you pick the one that fits how you sell.</p>
+    <div class="tabs" role="tablist" aria-label="US states" id="tabs"></div>
+    <div class="state" role="tabpanel" id="statePanel" aria-live="polite"></div>
+    <p class="note">State fees are paid to the state. Other states on request.</p>
   </section>
 
+  <section aria-labelledby="h-route">
+    <p class="kicker">One team, start to finish</p>
+    <h2 id="h-route">We run the US side. You run the business.</h2>
+    <p class="sub">Everything your US company needs, from the first filing to every tax season after, handled from India.</p>
+
+    <ol class="route">
+      <li class="end flagged"><svg class="flag" aria-hidden="true"><use href="#flag-in"/></svg>You, in India<small>A passport and a business idea is enough to start.</small></li>
+
+      <li class="phase">
+        <h3>Set up</h3>
+        <div class="stop">
+          <h4>Your US LLC, in the right state</h4>
+          <ul>
+            <li>Wyoming LLCs filed with the state within 24 hours</li>
+            <li>USBizGuru files as organizer, so your name stays off the public record</li>
+            <li>Operating agreement and a registered agent in your state</li>
+          </ul>
+          <span class="price">Wyoming from $99 plus the $103.75 state fee</span>
+        </div>
+        <div class="stop">
+          <h4>Your EIN, without an SSN</h4>
+          <p>Your IRS tax ID. We prepare Form SS-4, you approve every line, and we file it for you.</p>
+        </div>
+      </li>
+
+      <li class="phase">
+        <h3>Get paid</h3>
+        <div class="stop">
+          <h4>US bank account and payments</h4>
+          <ul>
+            <li>A guided call where we open your US business account together</li>
+            <li>Stripe and PayPal set up against your company</li>
+            <li>Banking guidance for Mercury and Wise</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="phase">
+        <h3>Every year</h3>
+        <div class="stop tax">
+          <span class="tag">We handle your US tax</span>
+          <h4>US tax filings</h4>
+          <ul>
+            <li>Form 5472 with the pro-forma 1120, prepared through our US tax partner</li>
+            <li>Form 1065 for LLCs with more than one member</li>
+          </ul>
+        </div>
+        <div class="stop">
+          <h4>Stay in good standing</h4>
+          <ul>
+            <li>Annual report or state tax filed on time</li>
+            <li>Wyoming registered agent renewed for $49 a year</li>
+            <li>Reminders 60, 30 and 7 days before every deadline</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="phase">
+        <h3>Whenever you need</h3>
+        <div class="stop">
+          <h4>Run it like it is next door</h4>
+          <ul>
+            <li>Change the name, members or address of your LLC</li>
+            <li>Bring your profits home to India the right way</li>
+            <li>Close the LLC properly if you stop, so the fees stop too</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="end home flagged"><svg class="flag" aria-hidden="true"><use href="#flag-us"/></svg>A US company you run from home<small>Selling in dollars, filed and taxed correctly every year.</small></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-about">
+    <p class="kicker">About me</p>
+    <h2 id="h-about">I've lived the US side myself.</h2>
+    <div class="about" style="margin-top:18px">
+      <div class="me"><img src="founder-634.webp" alt=""><div><b>Vipul Patel</b><span>Founder and CEO, USBizGuru</span></div></div>
+      <p>I lived and worked in the USA from 2007 to 2019, then in Japan from 2020 to 2024. I've seen how businesses are built and run across borders, and how confusing the US side looks from the outside.</p>
+      <p>I started USBizGuru to give founders in India a clear, honest way into the US market: the right paperwork, filed properly, at a price you know up front. USBizGuru is a Wyoming LLC itself, so we use what we sell.</p>
+      <ul class="years" aria-label="Where I have worked">
+        <li><svg class="flag" aria-hidden="true"><use href="#flag-us"/></svg><b>USA</b><span>2007 to 2019</span></li>
+        <li><svg class="flag" aria-hidden="true"><use href="#flag-jp"/></svg><b>Japan</b><span>2020 to 2024</span></li>
+        <li class="now"><svg class="flag" aria-hidden="true"><use href="#flag-in"/></svg><b>India</b><span>Today</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-for">
+    <p class="kicker">Who we work with</p>
+    <h2 id="h-for">Built for founders in India</h2>
+    <div class="who" style="margin-top:18px">
+      <p>For anyone who wants to accept US payments and look like a US business.</p>
+      <ul class="chips">
+        <li>Freelancers</li><li>SaaS founders</li><li>Amazon sellers</li><li>Etsy sellers</li><li>Shopify stores</li><li>Creators</li>
+      </ul>
+    </div>
+    <div class="ask">
+      <b>At this event, I'm looking for</b>
+      <p id="ask">Founders who sell to the US and need a US company, EIN and Stripe.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Not sure where to start?</h2>
+    <p>Tell me what you sell and who buys it. I'll tell you what you need, and what you don't.</p>
+    <div class="actions">
+      <a class="btn gold" href="https://usbizguru.com" target="_blank" rel="noopener">Start my US LLC</a>
+      <a class="btn ghost" data-wa href="#">Ask me on WhatsApp first</a>
+    </div>
+  </div>
+
   <footer>
-    <div class="made"><div class="marks" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></div><span><a href="https://usbizguru.com">USBizGuru LLC</a> · Wyoming LLC · EIN · Banking</span></div>
-    <span>Built by <a href="https://300dpi.co">300DPI</a>, our design, print and software studio. This page stays current.</span>
+    <img src="logo-wordmark.svg" alt="USBizGuru" width="110" height="22">
+    <p>USBizGuru LLC, a Wyoming company serving founders in India.</p>
+    <p>US tax returns are prepared through our US tax partner.</p>
   </footer>
 </div>
 
-<div class="qr" id="qr" role="dialog" aria-label="QR code for this page">
-  <div class="who"><div class="marks" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></div><b>Vipul Patel</b><span>USBizGuru · Scan to get my card</span></div>
-  <div class="box" id="qrbox"></div>
-  <small id="qrurl"></small>
-  <div class="row"><button type="button" id="qrshare" hidden>Send by AirDrop / Quick Share</button><button type="button" id="qrclose">Open full card</button></div>
+<div class="bar" id="bar" aria-hidden="true">
+  <div class="in">
+    <a class="btn wa" data-wa href="#" tabindex="-1">WhatsApp</a>
+    <a class="btn gold" href="vipul-patel.vcf" download="vipul-patel.vcf" tabindex="-1">Save contact</a>
+    <a class="qrbtn" data-qr href="#qr" tabindex="-1" aria-label="Show QR code"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14h1M14 20h1M20 20h1M17 17h4v4"/></svg></a>
+  </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<div class="qr" id="qr" role="dialog" aria-modal="true" aria-label="QR code for this card">
+  <div class="head"><img src="founder-634.webp" alt=""><b>Vipul Patel</b><span>USBizGuru. Scan to get my card.</span></div>
+  <div class="box" id="qrbox"></div>
+  <small id="qrurl"></small>
+  <div class="row"><button type="button" class="btn gold" id="qrshare" hidden>Send by AirDrop or Quick Share</button><button type="button" class="btn line" id="qrclose">Open the full card</button></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha384-3zSEDfvllQohrq0PHL1fOXJuC/jSOO34H46t6UQfobFOmxE5BpjjaIJY5F2/bMnU" crossorigin="anonymous"></script>
 <script>
-/* ======= EDIT HERE: contact details and businesses ======= */
+/* ======= EDIT HERE: contact details ======= */
 const ME={
   name:"Vipul Patel",
   phone:"+919586492922",          /* USBizGuru India WhatsApp; used for Call and WhatsApp */
   email:"info@usbizguru.com",
   linkedin:"",                    /* e.g. https://www.linkedin.com/in/yourname ; leave empty to hide */
-  photo:""                        /* e.g. "vipul.jpg" placed next to this file; leave empty for initials */
+  waText:"Hi Vipul, we met at the business meetup. I'd like to set up a US company."
 };
-const BIZ=[
-  {lead:true,name:"USBizGuru LLC",url:"https://usbizguru.com",tag:"Your US company, set up properly. Priced in rupees. No surprises.",what:"For Indian freelancers, SaaS founders, Amazon, Etsy and Shopify sellers and creators who want to accept US payments and look like a US business.",points:["Wyoming LLC filed within 24 hours","EIN without an SSN","Registered agent and operating agreement","Banking guidance: Mercury, Wise, Stripe","Compliance reminders for annual filings"],fact:"From $99 + $103.75 state fee · ₹ pricing · WhatsApp support",tint:"#3b7bff",mono:"US"},
-  {name:"Huunr",url:"https://huunr.com",tag:"Where Indian business gets done.",what:"Paid founder community: a curated WhatsApp group, member business pages, directory and deal flow for people building in India or the USA.",fact:"₹999 lifetime · 1,000 printed cards included",tint:"#f2b134",mono:"Hu"},
-  {name:"300DPI",url:"https://300dpi.co",tag:"Ideas, resolved.",what:"Our design, print and software studio in Gujarat: brand identity, print and packaging, websites, apps, WhatsApp and AI bots. It built this card.",fact:"23 services · from ₹1,999 · transparent pricing",tint:"#e63946",mono:"300"},
-  {name:"48HoursBanners.com",url:"https://48hoursbanners.com",tag:"Fast banners. Done right.",what:"Vinyl banners, step-and-repeat backdrops, tent banners and table runners, printed in the USA with free overnight shipping across the continental US.",fact:"Approve by 9 PM EST → on your door Tuesday",tint:"#f3efe6",mono:"48"},
-  {name:"Mansi Print",url:"https://mansiprint.shop",tag:"Large-format printing, nationwide USA.",what:"Banners, yard signs, vehicle wraps, trade-show displays, window vinyl and business cards for businesses, events and real estate.",fact:"Banners from $12.99 · free shipping on most products",tint:"#9d8cff",mono:"MP"}
+/* States shown in the picker. Fees are the state's own, from the USBizGuru states table. */
+const STATES=[
+  {name:"Wyoming",pop:"Most popular",best:"Most founders from India pick it: low yearly cost and strong privacy.",
+   file:"$103.75",fileNote:"$100 plus $3.75 card fee",year:"$60",yearNote:"Annual report",ours:"Our Wyoming package starts at <b>$99</b>."},
+  {name:"Delaware",best:"Best if you plan to raise money from US investors.",
+   file:"$110",fileNote:"Filing fee",year:"$300",yearNote:"LLC tax, due 1 June"},
+  {name:"New Mexico",best:"Lowest cost to keep running. No annual report for LLCs.",
+   file:"$50",fileNote:"Filing fee",year:"$0",yearNote:"No annual report"},
+  {name:"Florida",best:"A good fit if your customers or partners are in Florida.",
+   file:"$125",fileNote:"Filing fee",year:"$138.75",yearNote:"Annual report"},
+  {name:"Texas",best:"A good fit if your customers or team are in Texas.",
+   file:"$300",fileNote:"Filing fee",year:"$0",yearNote:"Franchise tax report, $0 for most small LLCs"}
 ];
 /* ======= end of edits ======= */
 
 const $=id=>document.getElementById(id);
 const tel=ME.phone.replace(/[^\d+]/g,'');
-$('wa').href='https://wa.me/'+tel.replace('+','')+'?text='+encodeURIComponent('Hi Vipul, we met at the founders event. Interested in a US LLC.');
+const wa='https://wa.me/'+tel.replace('+','')+'?text='+encodeURIComponent(ME.waText);
+document.querySelectorAll('[data-wa]').forEach(a=>{a.href=wa;a.target='_blank';a.rel='noopener';});
 $('call').href='tel:'+tel;
 $('mail').href='mailto:'+ME.email;
 if(ME.linkedin){$('li').href=ME.linkedin;$('li').hidden=false;}
-if(ME.photo){$('photo').innerHTML='<img src="'+ME.photo+'" alt="">';}
-$('biz').innerHTML=BIZ.map((b,i)=>`${i===1?'<h2 style="margin-top:8px">Also building</h2>':''}<a class="card${b.lead?' lead':''}" href="${b.url}" style="--tint:${b.tint}" target="_blank" rel="noopener"><div class="mono">${b.mono}</div><div><h3>${b.name}</h3><p class="tag">${b.tag}</p><p class="what">${b.what}</p>${b.points?'<ul>'+b.points.map(p=>'<li>'+p+'</li>').join('')+'</ul>':''}<span class="fact">${b.fact}</span></div><div class="go"><span>Visit</span>${b.url.replace(/^https?:\/\//,'')}</div></a>`).join('');
 
-/* QR of this page, for phones with NFC off */
-let made=false;
-function openQR(){$('qr').classList.add('open');const u=PAGE;if(!made&&window.QRCode){made=true;new QRCode($('qrbox'),{text:u,width:300,height:300,correctLevel:QRCode.CorrectLevel.M});}$('qrurl').textContent=u.replace('https://','');}
-$('qrbtn').addEventListener('click',e=>{e.preventDefault();openQR();});
-$('qrclose').addEventListener('click',()=>$('qr').classList.remove('open'));
-/* The page's own address, so the QR and Share use whichever host serves it (300dpi.co/card or the GitHub mirror) */
+/* State picker */
+const tabs=$('tabs'),panel=$('statePanel');
+function showState(i){
+  const s=STATES[i];
+  tabs.querySelectorAll('button').forEach((b,j)=>{b.setAttribute('aria-selected',String(i===j));b.tabIndex=i===j?0:-1;});
+  panel.setAttribute('aria-labelledby','tab-'+i);
+  panel.innerHTML=`<div class="hd"><h3>${s.name} LLC</h3>${s.pop?`<span class="pop">${s.pop}</span>`:''}</div>
+    <p class="best">${s.best}</p>
+    <dl><div><dt>To form</dt><dd>${s.file}<small>${s.fileNote}</small></dd></div>
+    <div><dt>Every year</dt><dd>${s.year}<small>${s.yearNote}</small></dd></div></dl>
+    ${s.ours?`<p class="ours">${s.ours}</p>`:`<p class="ours">Ask me for your total with our service included.</p>`}`;
+}
+tabs.innerHTML=STATES.map((s,i)=>`<button type="button" role="tab" id="tab-${i}" aria-controls="statePanel">${s.name}</button>`).join('');
+tabs.querySelectorAll('button').forEach((b,i)=>b.addEventListener('click',()=>showState(i)));
+tabs.addEventListener('keydown',e=>{const btns=[...tabs.querySelectorAll('button')];const cur=btns.indexOf(document.activeElement);if(cur<0)return;
+  let n=e.key==='ArrowRight'?cur+1:e.key==='ArrowLeft'?cur-1:null;if(n===null)return;e.preventDefault();n=(n+btns.length)%btns.length;showState(n);btns[n].focus();});
+showState(0);
+
+/* The page's own address, so the QR and Share use whichever host serves it */
 const PAGE=(location.origin+location.pathname).replace(/index\.html$/,'').replace(/\/?$/,'/');
-if(navigator.share){$('qrshare').hidden=false;$('qrshare').addEventListener('click',()=>navigator.share({title:ME.name+' · USBizGuru',text:'Vipul Patel, founder of USBizGuru: US LLC, EIN and banking for Indian founders.',url:PAGE}).catch(()=>{}));}
+
+/* QR view */
+let made=false;
+function openQR(){$('qr').classList.add('open');if(!made&&window.QRCode){made=true;new QRCode($('qrbox'),{text:PAGE,width:260,height:260,colorDark:'#062337',correctLevel:QRCode.CorrectLevel.M});}$('qrurl').textContent=PAGE.replace(/^https?:\/\//,'');$('qrclose').focus();}
+function closeQR(){$('qr').classList.remove('open');}
+document.querySelectorAll('[data-qr]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();openQR();}));
+$('qrclose').addEventListener('click',closeQR);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeQR();});
+if(navigator.share){$('qrshare').hidden=false;$('qrshare').addEventListener('click',()=>navigator.share({title:ME.name+', USBizGuru',text:'Vipul Patel, founder of USBizGuru: your US company, run from India.',url:PAGE}).catch(()=>{}));}
+
 /* Opened from the home-screen app, or with ?mode=share or #qr: show the QR first */
 const standalone=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
 if(location.hash==='#qr'||new URLSearchParams(location.search).get('mode')==='share'||standalone)openQR();
 
-/* Native share where the phone offers it */
-if(navigator.share){const s=document.createElement('a');s.className='btn';s.href='#';s.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>Share';s.addEventListener('click',e=>{e.preventDefault();navigator.share({title:ME.name,url:location.href.split('#')[0]}).catch(()=>{});});document.querySelector('.actions').appendChild(s);}
+/* Sticky bar appears once the hero buttons leave the screen */
+const bar=$('bar');
+if('IntersectionObserver' in window){
+  new IntersectionObserver(([en])=>{
+    const show=!en.isIntersecting&&en.boundingClientRect.top<0;
+    bar.classList.toggle('show',show);bar.setAttribute('aria-hidden',String(!show));
+    bar.querySelectorAll('a').forEach(a=>a.tabIndex=show?0:-1);
+  }).observe($('heroActions'));
+}
 </script>
 </body>
 </html>
